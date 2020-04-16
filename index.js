@@ -8,4 +8,4 @@ app.get('/crash',(req,res)=>{
     process.exit(1)
 })
 
-app.listen(80,()=>console.log('Server Running'));
+app.listen(process.env.PORT,()=>console.log('Server Running', process.env.PORT));
